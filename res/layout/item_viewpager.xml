@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycos="http://schemas.android.com/apk/res/com.example.listdemo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.example.listdemo.widget.MyViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_gravity="top"
+        android:background="#ffffff" />
+
+    <com.example.listdemo.widget.IndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="12dip"
+        mycos:indicator_counter="4"
+        mycos:indicator_default_sel="0"
+        mycos:indicator_img_focused="@drawable/guide_indicator_focused"
+        mycos:indicator_img_normal="@drawable/guide_indicator"
+        mycos:indicator_padding="8dip"
+        mycos:indicator_size="8dip" />
+
+</FrameLayout>
